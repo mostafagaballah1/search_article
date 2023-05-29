@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/searchHeader"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:text="@string/search_header"
+        android:textColor="@color/titleColor"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/searchBtn"
+        layout="@layout/listitem_nav" />
+
+    <View
+        android:id="@+id/border1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/popularHeader"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:text="@string/popular_header"
+        android:textColor="@color/titleColor"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/viewedBtn"
+        layout="@layout/listitem_nav" />
+
+    <include
+        android:id="@+id/sharedBtn"
+        layout="@layout/listitem_nav" />
+
+    <include
+        android:id="@+id/emailedBtn"
+        layout="@layout/listitem_nav" />
+
+    <View
+        android:id="@+id/border2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black" />
+</LinearLayout>
